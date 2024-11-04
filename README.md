@@ -1,6 +1,6 @@
 # World Happiness Dashboard
 
-[Link to dashboard](http://127.0.0.1:5500/World%20Happines%20Index%20Project/project%203%20/Module-16-Group4-Project3/index.html)
+[Link to dashboard](https://alandeng7.github.io/World-Happiness-Dashboard/)
 <br>
 ![Dashboard Home Page](Images/Dashboard_homepage.png)
 
