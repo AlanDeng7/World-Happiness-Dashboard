@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="Templates/style.css" />
+  </head>
+
+  <body>
+    <div class="home-container">
+      <a class="home-link" href="index.html">
+        <h1>How Happy Is Your Country?</h1>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="tab-bar">
+        <button class="tab-buttons" id="button1">World Happiness Score</button>
+        <button class="tab-buttons" id="button2">Population and Age</button>
+        <button class="tab-buttons" id="button3">Education Expenditure</button>
+        <button class="tab-buttons" id="button4">Migration Data</button>
+        <button class="tab-buttons" id="button5">Migration Map</button>
+      </div>
+    </div>
+
+    <div class="home-image container">
+      <img
+        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzNjYWEzZDljMzAwYzU1OGU2Y2FiNzc5Yzk1NDcyZjc4N2IzOTVhNiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/5QKpd80KsXgd7gkkpt/giphy.gif"
+        alt="Happy-World-gif"
+      />
+      <img
+        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzNjYWEzZDljMzAwYzU1OGU2Y2FiNzc5Yzk1NDcyZjc4N2IzOTVhNiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/5QKpd80KsXgd7gkkpt/giphy.gif"
+        alt="Happy-World-gif"
+      />
+      <img
+        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzNjYWEzZDljMzAwYzU1OGU2Y2FiNzc5Yzk1NDcyZjc4N2IzOTVhNiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/5QKpd80KsXgd7gkkpt/giphy.gif"
+        alt="Happy-World-gif"
+      />
+    </div>
+
+    <script>
+      document.getElementById("button1").addEventListener("click", function () {
+        window.location.href = "Templates/world_map.html";
+      });
+      document.getElementById("button2").addEventListener("click", function () {
+        window.location.href = "Templates/population_and_age.html";
+      });
+      document.getElementById("button3").addEventListener("click", function () {
+        window.location.href = "Templates/education.html";
+      });
+      document.getElementById("button4").addEventListener("click", function () {
+        window.location.href = "Templates/migration.html";
+      });
+      document.getElementById("button5").addEventListener("click", function () {
+        window.location.href = "Templates/migration_map.html";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>World Happiness Score</title>
+    <link
+      rel="stylesheet"
+      href="../Static/jquery-jvectormap-2.0.5.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <script src="../Static/jquery.js"></script>
+    <script src="../Static/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="../Static/jquery-jvectormap-world-mill.js"></script>
+
+    <link rel="Stylesheet" href="../Static/jquery-jvectormap-2.0.5.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="home-container">
+      <a class="home-link" href="../index.html">
+        <h1>World Happiness Score Heat Map</h1>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="tab-bar">
+        <button class="tab-buttons" id="button1">World Happiness Score</button>
+        <button class="tab-buttons" id="button2">Population and Age</button>
+        <button class="tab-buttons" id="button3">Education Expenditure</button>
+        <button class="tab-buttons" id="button4">Migration Data</button>
+        <button class="tab-buttons" id="button5">Migration Map</button>
+      </div>
+    </div>
+
+    <select class="drop-down" id="selDataset" onchange="selYear()">
+      <option>Select Year</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+    </select>
+
+    <map class="map" id="world-map"></map>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script src="../Static/data.js"></script>
+    <script src="../Static/world_map.js"></script>
+
+    <script>
+      document.getElementById("button1").addEventListener("click", function () {
+        window.location.href = "world_map.html";
+      });
+      document.getElementById("button2").addEventListener("click", function () {
+        window.location.href = "population_and_age.html";
+      });
+      document.getElementById("button3").addEventListener("click", function () {
+        window.location.href = "education.html";
+      });
+      document.getElementById("button4").addEventListener("click", function () {
+        window.location.href = "migration.html";
+      });
+      document.getElementById("button5").addEventListener("click", function () {
+        window.location.href = "migration_map.html";
+      });
+    </script>
+  </body>
+</html>
